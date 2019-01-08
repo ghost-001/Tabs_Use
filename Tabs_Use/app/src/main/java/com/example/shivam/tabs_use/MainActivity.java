@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             switch (position) {
+                    //Based on position selecting the appropriate Fragment from the given three tabs (Fragment)
                 case 0:
                     FragmentOne fragmentOne = new FragmentOne();
                     return fragmentOne;
@@ -97,10 +98,11 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-
+              //return the number of tabs 
             return 3;
         }
 
+        //specifying the title of respective tabs
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
